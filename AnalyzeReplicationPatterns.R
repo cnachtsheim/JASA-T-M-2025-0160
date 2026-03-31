@@ -59,9 +59,9 @@ calcPowersForRepPatterns = function(U,n_T,mu) {
 
 
 U = as.matrix(expand.grid(x = c(-1,0,1),y = c(-1,0,1)))
+t = nrow(U)
 U = cbind(matrix(1,t,1),U[,1],U[,2])
 for (analNum in 1:5) {
-  t = nrow(U)
   #
   # Case 1-5
   #
